@@ -9,6 +9,7 @@ import { IImage, ImageService } from '../../services/image.service';
 export class HomeComponent implements OnInit {
 
   images: Array<IImage> = [];
+  price = 23.5;
 
   constructor(private imageSvc: ImageService) { }
 

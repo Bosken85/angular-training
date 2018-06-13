@@ -1,4 +1,7 @@
-<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+<div *ngIf="images?.length <= 0">
+  No images provided for the slider
+</div>
+<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel" *ngIf="images?.length > 0">
     <ol class="carousel-indicators">   
       <li *ngFor="let image of images; let i = index;" 
         data-target="#carouselExampleIndicators" 
