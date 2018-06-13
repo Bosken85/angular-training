@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GamesService } from '../../services/games.service';
 import { IImage, ImageService } from '../../services/image.service';
 
 @Component({
@@ -9,9 +10,10 @@ import { IImage, ImageService } from '../../services/image.service';
 export class HomeComponent implements OnInit {
 
   images: Array<IImage> = [];
+  games: Array<any> = [];
   price = 23.5;
 
-  constructor(private imageSvc: ImageService) { }
+  constructor(private imageSvc: ImageService, private gameService: GamesService) { }
 
   ngOnInit() {
     this.imageSvc.getAll().subscribe(images => {
@@ -19,6 +21,13 @@ export class HomeComponent implements OnInit {
     }, error => {
       console.log(error);
       this.images = [];
+    });
+
+    this.gameService.getAll().subscribe(games => {
+      this.games = games;
+    }, error => {
+      console.log(error);
+      this.games = [];
     });
   }
 }

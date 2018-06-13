@@ -7,6 +7,7 @@ import { AppRoutes } from './app.module.routes';
 import { FooterComponent } from './footer/footer.component';
 import { CardModule } from './modules/card/card.module';
 import { CarouselModule } from './modules/carousel/carousel.module';
+import { RepeatListModule } from './modules/repeat-list/repeat-list.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -30,6 +31,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     RouterModule.forRoot(AppRoutes),
     CarouselModule,
     CardModule,
+    RepeatListModule,
     HttpClientModule
   ],
   providers: [],
