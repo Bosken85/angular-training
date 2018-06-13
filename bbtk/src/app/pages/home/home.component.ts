@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       this.images = [];
     });
 
-    this.gameService.getAll().subscribe(games => {
+    this.gameService.getAll(true).subscribe(games => {
       this.games = games;
     }, error => {
       console.log(error);
