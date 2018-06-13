@@ -1,0 +1,19 @@
+{
+  "images": [
+      {
+        "id": 1,
+        "url": "http://placehold.it/1200x350",
+        "title": "image 1"
+      },
+      {
+        "id": 2,
+        "url": "http://placehold.it/1200x350",
+        "title": "image 2"
+      },
+      {
+        "id": 3,
+        "url": "http://placehold.it/1200x350",
+        "title": "image 3"
+      }
+    ]
+}
