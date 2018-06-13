@@ -4,7 +4,7 @@
     <app-card *appRepeatListItem="let item">
         <img class="card-img-top" [src]="item.image" [alt]="item.title">
         <h4 class="card-title">
-            <a card-title href="#">{{item.title}}</a>
+            <a card-title routerLink="item.id">{{item.title}}</a>
           </h4>
           <h5>{{item.price | currency:'EUR'}}</h5>
           <p class="card-text">

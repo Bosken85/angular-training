@@ -10,8 +10,14 @@ export class GamesService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Array<any>> {
-    return this.http.get<Array<any>>(this._baseUri);
+  getAll(featured = false): Observable<Array<any>> {
+    const params = {};
+    if (featured) {
+      params['featured'] = true;
+    }
+    return this.http.get<Array<any>>(this._baseUri, {
+      params: params
+    });
   }
 
   get(id: number): Observable<any> {
