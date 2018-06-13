@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IImage, ImageService } from '../../services/image.service';
 
 @Component({
   selector: 'app-home',
@@ -7,24 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  images: Array<any> = [];
+  images: Array<IImage> = [];
 
-  constructor() { }
+  constructor(private imageSvc: ImageService) { }
 
   ngOnInit() {
-    this.images = [
-      {
-        url: 'http://placehold.it/1200x350',
-        title: 'image 1'
-      },
-      {
-        url: 'http://placehold.it/1200x350',
-        title: 'image 2'
-      },
-      {
-        url: 'http://placehold.it/1200x350',
-        title: 'image 3'
-      }
-    ];
+    this.imageSvc.getAll().subscribe(images => {
+      this.images = images;
+    }, error => {
+      console.log(error);
+      this.images = [];
+    });
   }
 }
