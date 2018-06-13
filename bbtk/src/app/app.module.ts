@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { StarsPipe } from './pipes/stars.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     AboutComponent,
     ServicesComponent,
     ContactComponent,
-    TruncatePipe
+    TruncatePipe,
+    StarsPipe
   ],
   imports: [
     BrowserModule,

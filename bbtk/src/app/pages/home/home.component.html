@@ -2,14 +2,14 @@
 <app-carousel [images]="images"></app-carousel>
 <app-repeat-list [items]="games">
     <app-card *appRepeatListItem="let item">
-        <img class="card-img-top" [src]="item.image" alt="">
+        <img class="card-img-top" [src]="item.image" [alt]="item.title">
         <h4 class="card-title">
-            <a card-title href="#">Item One</a>
+            <a card-title href="#">{{item.title}}</a>
           </h4>
-          <h5>23</h5>
+          <h5>{{item.price | currency:'EUR'}}</h5>
           <p class="card-text">
-            {{item.description | truncate:11 }}
+            {{item.description | truncate:200 }}
           </p>
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+        <small class="text-muted" [innerHTML]="item.rating | stars"></small>
     </app-card>
 </app-repeat-list>
