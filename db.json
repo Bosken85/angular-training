@@ -21,37 +21,43 @@
       "id": 1,
       "title": "Bitcher 3 - Game of the year edition",
       "description": "Ever miss that feeling that everybody is a wining little bitch? This game will make it possible. We've implemented an AI that will constantly start wining about the insignificant stuff. The challenge is not the kill the AI.",
-      "price": 39.99
+      "price": 39.99,
+      "image": "http://placehold.it/700x400"
     },
     {
       "id": 2,
       "title": "Soul crusher - The mommy edition",
       "description": "It's midnight, you hear strange voices. They are telling you just how disappointed the are in you. You find out that your mother has found a way to go back in time and prevent you from ever been born. Your goal is to prevent her from failing.",
-      "price": 49.99
+      "price": 49.99,
+      "image": "http://placehold.it/700x400"
     },
     {
       "id": 3,
       "title": "Mood Raider - Life in pieces",
       "description": "A real-time, true to life game where you get to experience how it is to be Kevin. There are surprises lurking behind every corner. And when you least expect it, you get hit by a train. It a fun game for the entire family.",
-      "price": 19.99
+      "price": 19.99,
+      "image": "http://placehold.it/700x400"
     },
     {
       "id": 4,
       "title": "Angry turds",
       "description": "Try to evade the constant crap that it's falling from the sky. This new spin on space invaders garantees hours of fun. It the best way to escape the shitty reality that is called your life.", 
-      "price": 2.99
+      "price": 2.99,
+      "image": "http://placehold.it/700x400"
     },
     {
       "id": 5,
       "title": "Tomb Raider Anniversary",
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias facilis ullam architecto quo doloribus excepturi commodi praesentium fugit nobis nulla dolorum tempora, quisquam in ipsam rem atque! Asperiores sapiente obcaecati deserunt harum nemo et, in facere deleniti est dignissimos praesentium, officia atque eos delectus ea alias, dolorem tenetur incidunt!",
-      "price": 0.99
+      "price": 0.99,
+      "image": "http://placehold.it/700x400"
     },
     {
       "id": 6,
       "title": "Worms",
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias facilis ullam architecto quo doloribus excepturi commodi praesentium fugit nobis nulla dolorum tempora, quisquam in ipsam rem atque! Asperiores sapiente obcaecati deserunt harum nemo et, in facere deleniti est dignissimos praesentium, officia atque eos delectus ea alias, dolorem tenetur incidunt!",
-      "price": 29.99
+      "price": 29.99,
+      "image": "http://placehold.it/700x400"
     }
   ]
 }
