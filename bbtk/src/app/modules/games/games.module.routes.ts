@@ -9,8 +9,7 @@ export const routes: Routes = [
         path: '', component: GamesComponent,
         children: [
             { path: '', component: GameOverviewComponent },
-            { path: ':id', component: GameDetailComponent, resolve: { game: GameResolverService } },
-            { path: '', pathMatch: 'full', redirectTo: '' }
+            { path: ':id', component: GameDetailComponent, resolve: { game: GameResolverService } }
         ]
     }
 ];

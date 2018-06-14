@@ -1,0 +1,4 @@
+<select class="form-control" [disabled]="disabled" [(ngModel)]="key">
+  <option value="null" i18n="@@Choose">Choose...</option>
+  <option [value]="item.id" *ngFor="let item of items">{{item.value}}</option>
+</select>

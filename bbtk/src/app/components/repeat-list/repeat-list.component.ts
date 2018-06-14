@@ -12,7 +12,7 @@ export class RepeatListComponent implements OnInit, AfterContentInit {
   items: Array<any>;
 
   @ContentChild(RepeatListItemDirective, {read: TemplateRef})
-  cardTemplate: TemplateRef<any>;
+  itemTemplate: TemplateRef<any>;
 
   constructor() { }
 
