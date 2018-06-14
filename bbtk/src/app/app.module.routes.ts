@@ -10,5 +10,6 @@ export const AppRoutes: Routes = [
     { path: 'services', component: ServicesComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'games', loadChildren: './modules/games/games.module#GamesModule' },
     { path: '**', component: HomeComponent }
 ];

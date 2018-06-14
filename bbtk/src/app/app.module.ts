@@ -13,8 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { StarsPipe } from './pipes/stars.pipe';
-import { TruncatePipe } from './pipes/truncate.pipe';
+import { CorePipesModule } from './pipes/core-pipes.module';
 
 @NgModule({
   declarations: [
@@ -24,9 +23,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     HomeComponent,
     AboutComponent,
     ServicesComponent,
-    ContactComponent,
-    TruncatePipe,
-    StarsPipe
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +31,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     CarouselModule,
     CardModule,
     RepeatListModule,
-    HttpClientModule
+    HttpClientModule,
+    CorePipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
