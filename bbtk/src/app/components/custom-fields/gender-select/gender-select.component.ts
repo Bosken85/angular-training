@@ -11,6 +11,7 @@ export class GenderSelectComponent implements OnInit, ControlValueAccessor {
   @Input('key')
   private _key: any;
 
+
   @Input()
   items: Array<any> = [
     { id: 1, value: 'male' },
