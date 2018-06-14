@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-detail',
@@ -10,7 +10,7 @@ export class GameDetailComponent implements OnInit {
 
   game: any;
 
-  constructor(private actr: ActivatedRoute) { }
+  constructor(private actr: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.actr.data.subscribe(data => {
@@ -18,4 +18,10 @@ export class GameDetailComponent implements OnInit {
     });
   }
 
+  returnToSender($event: Event) {
+    $event.preventDefault();
+    $event.stopPropagation();
+
+    this.router.navigate(['..'], { relativeTo: this.actr });
+  }
 }

@@ -1,3 +1,5 @@
 <p>
   {{game | json}}
+  <button type="button" routerLink="../">Return</button>
+  <button type="button" (click)="returnToSender($event)">Return clicked</button>
 </p>
