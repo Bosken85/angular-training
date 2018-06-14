@@ -9,7 +9,7 @@ export const AppRoutes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'contact', component: ContactComponent },
+    { path: 'contact', loadChildren: './modules/contact/contact.module#ContactModule' },
     { path: 'games', loadChildren: './modules/games/games.module#GamesModule' },
     { path: '**', component: HomeComponent }
 ];

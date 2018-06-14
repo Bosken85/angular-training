@@ -10,7 +10,7 @@ export const routes: Routes = [
         children: [
             { path: '', component: GameOverviewComponent },
             { path: ':id', component: GameDetailComponent, resolve: { game: GameResolverService } },
-            { path: '', pathMatch: 'full', redirectTo: '' }
+            { path: '**', component: GameOverviewComponent }
         ]
     }
 ];
