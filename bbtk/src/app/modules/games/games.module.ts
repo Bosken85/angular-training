@@ -6,6 +6,7 @@ import { RepeatListModule } from '../../components/repeat-list/repeat-list.modul
 import { CorePipesModule } from '../../pipes/core-pipes.module';
 import { GameDetailComponent } from './game-detail/game-detail.component';
 import { GameOverviewComponent } from './game-overview/game-overview.component';
+import { GameResolverService } from './game-resolver.service';
 import { GamesComponent } from './games.component';
 import { routes } from './games.module.routes';
 
@@ -17,6 +18,7 @@ import { routes } from './games.module.routes';
     RepeatListModule,
     CorePipesModule
   ],
-  declarations: [GamesComponent, GameDetailComponent, GameOverviewComponent]
+  declarations: [GamesComponent, GameDetailComponent, GameOverviewComponent],
+  providers: [GameResolverService]
 })
 export class GamesModule { }

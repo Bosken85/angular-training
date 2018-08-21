@@ -4,7 +4,7 @@ import { RepeatListItemDirective } from './repeat-list-item.directive';
 @Component({
   selector: 'app-repeat-list',
   templateUrl: './repeat-list.component.html',
-  styleUrls: ['./repeat-list.component.css']
+  styleUrls: ['./repeat-list.component.scss']
 })
 export class RepeatListComponent implements OnInit, AfterContentInit {
 

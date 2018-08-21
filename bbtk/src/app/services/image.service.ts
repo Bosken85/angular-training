@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ImageService {
-  private _baseUri = 'https://my-json-server.typicode.com/Bosken85/angular-training/images';
+  private _baseUri = 'api/images';
 
   constructor(private http: HttpClient) { }
 
@@ -20,3 +20,5 @@ export interface IImage {
   url: string;
   title: string;
 }
+
+

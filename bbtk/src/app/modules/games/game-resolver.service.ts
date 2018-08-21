@@ -3,9 +3,7 @@ import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/r
 import { Observable } from 'rxjs/internal/Observable';
 import { GamesService, IGame } from '../../services/games.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class GameResolverService implements Resolve<IGame> {
 
   constructor(private gameService: GamesService) { }

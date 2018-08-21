@@ -1,18 +1,22 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ControlValueAccessor } from '@angular/forms';
+import { Component, forwardRef, OnInit } from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'app-gender-select',
   templateUrl: './gender-select.component.html',
-  styleUrls: ['./gender-select.component.css']
+  styleUrls: ['./gender-select.component.scss'],
+  providers: [{
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => GenderSelectComponent),
+      multi: true
+    }
+  ]
 })
 export class GenderSelectComponent implements OnInit, ControlValueAccessor {
   // tslint:disable-next-line:no-input-rename
-  @Input('key')
+  // @Input('key')
   private _key: any;
 
-
-  @Input()
   items: Array<any> = [
     { id: 1, value: 'male' },
     { id: 2, value: 'female' },

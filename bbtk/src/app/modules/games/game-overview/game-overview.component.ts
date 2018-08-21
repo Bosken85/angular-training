@@ -4,7 +4,7 @@ import { GamesService } from '../../../services/games.service';
 @Component({
   selector: 'app-game-overview',
   templateUrl: './game-overview.component.html',
-  styleUrls: ['./game-overview.component.css']
+  styleUrls: ['./game-overview.component.scss']
 })
 export class GameOverviewComponent implements OnInit {
   games: Array<any> = [];

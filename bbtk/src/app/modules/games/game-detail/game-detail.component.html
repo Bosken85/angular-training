@@ -1,5 +1,29 @@
-<p>
+<!-- <p>
   {{game | json}}
   <button type="button" routerLink="../">Return</button>
   <button type="button" (click)="returnToSender($event)">Return clicked</button>
-</p>
+</p> -->
+<div class="row">
+  <div class="col-md-12 mt-4 mb-4">
+    <app-card>
+      <img class="card-img-top" [src]="game.image" [alt]="game.title">
+      <h4 class="card-title">
+        <a [routerLink]="game.id">{{game.title}}</a>
+      </h4>
+      <h5>{{game.price | currency:'EUR'}}</h5>
+      <p class="card-text">
+        {{ game.description }}
+      </p>
+      <div class="text-muted">
+        <div class="float-right">
+            <div class="input-group float-right">
+                <input type="number" class="form-control" placeholder="Amount">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Order</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </app-card>
+  </div>
+</div>
