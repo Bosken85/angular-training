@@ -27,7 +27,6 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {
-    debugger;
   }
 
 }

@@ -15,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { CorePipesModule } from './pipes/core-pipes.module';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CorePipesModule } from './pipes/core-pipes.module';
     NavigationComponent,
     HomeComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
